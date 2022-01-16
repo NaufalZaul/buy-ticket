@@ -1,0 +1,270 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .brand {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.header .brand a {
+  font-size: 100px;
+  text-decoration: none;
+  color: #000;
+}
+
+.header .brand p {
+  margin-top: 1em;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.header .brand button {
+  margin-top: 5em;
+  padding: .5em 2em;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.header .brand button:hover {
+  color: #fff;
+  background-color: #0daf0d;
+}
+
+.header .image-header {
+  width: 50%;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.header .image-header img {
+  width: 80%;
+}
+
+.main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.main ul a {
+  text-decoration: none;
+  width: 40%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.main ul a li {
+  list-style: none;
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkorange;
+  margin: 10px;
+  font-size: 40px;
+  position: relative;
+}
+
+.main ul a li img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-top button {
+  border: none;
+  background-color: white;
+}
+
+.header-top button .fa-home {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.header-top .header-booking {
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 50px;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.top .image-top {
+  width: 40%;
+  text-align: center;
+}
+
+.top .image-top img {
+  width: 60%;
+  border-radius: 90px;
+}
+
+.top .form-top {
+  width: 60%;
+  margin-right: 6em;
+}
+
+.top .form-top .booking {
+  display: -ms-grid;
+  display: grid;
+  justify-items: start;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.top .form-top .booking label {
+  font-size: 20px;
+  margin: .5em 0;
+}
+
+.top .form-top .booking input {
+  width: 100%;
+  margin: .5em auto;
+  padding: 5px;
+}
+
+.top .form-top .booking button {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 2em 0 .5em;
+  padding: .5em 3em;
+  border: none;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: #00b81f;
+  color: #fff;
+}
+
+.top .form-top .booking button:hover {
+  background-color: transparent;
+  border: 1px solid green;
+  color: #000;
+}
+
+.print-header {
+  margin: 2em 0 1em 2em;
+}
+
+.attention {
+  margin-left: 4em;
+  font-style: italic;
+}
+
+.ticket {
+  color: #000;
+  border: 1px groove black;
+  margin: 3em auto;
+  width: 60%;
+  background-size: cover;
+  background-repeat: round;
+}
+
+.ticket .top-ticket .top-header {
+  color: black;
+  text-align: center;
+}
+
+.ticket .top-ticket .top-header i {
+  padding: 5px 200px 5px 200px;
+  background-color: red;
+  border-radius: 0 0 30px 30px;
+  color: #fff;
+}
+
+.ticket .top-ticket .top-body {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ticket .top-ticket .top-body span {
+  width: 100px;
+}
+
+.ticket .top-ticket .top-body p {
+  margin: 1em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ticket .bottom-ticket {
+  text-align: center;
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ticket .bottom-ticket h1 {
+  font-size: 50px;
+}
+
+.ticket .bottom-ticket .main-right {
+  font-size: 20px;
+}
+
+.ticket .bottom-ticket .main-right p {
+  margin: 1em;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media print {
+  .header,
+  .header-booking,
+  .top {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
